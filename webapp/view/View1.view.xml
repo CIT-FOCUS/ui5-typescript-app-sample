@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="citsample.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}" showHeader="true">
+        <customHeader>
+            <Bar id="customHeaderBar">
+                <contentMiddle>
+                    <Text id="textTitle" text="{i18n>title}!"/>
+                </contentMiddle>
+
+                <contentRight>
+                    <Text id="textPoweredBy" text="Powered by "/>
+                    <Image id="poweredByCit" src="../img/cit.png" width="2.5rem" alt="Powered by CIT Focus" press=".onPoweredByClick()" />
+                </contentRight>
+		    </Bar>
+        </customHeader>
+        <content>
+            <Text text="Hello world!"/>
+        </content>
+    </Page>
+</mvc:View>
